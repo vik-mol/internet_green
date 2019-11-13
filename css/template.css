@@ -357,35 +357,6 @@ body {
   color: #bdd70c;
   text-align: center; }
 
-.form__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.form__col {
-  width: 100%;
-  padding: 0 10px;
-  margin: 0 0 10px 0; }
-  .form__col_60 {
-    width: 60%; }
-  .form__col_50 {
-    width: 50%; }
-  .form__col_20 {
-    width: 20%; }
-
-.form__input {
-  background: #ededed;
-  border-radius: 5px;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 10px; }
-
-.form__label {
-  display: block;
-  margin: 0 0 10px 0; }
-
 @media (max-width: 768px) {
   .container {
     padding: 0 15px; }
