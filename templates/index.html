@@ -179,17 +179,65 @@
 </div>
 <!-- tariffs-list -->
 
+<div class="section">
+    <div class="container">
+        <h2 class="title">Выбрали свой тариф?</h2>
+        <div class="order">
+            <div class="order__text">Давайте договоримся о подключении, оставьте номер телефона и мы перезвоним.</div>
+            <form action="" class="order__form">
+                <div class="order__input-wrap">
+                    <div class="order__label">Перезвоним в течении 5 минут!</div>
+                    <input type="text" class="order__input" placeholder="+7 (  ) --- -- --">
+                </div>
+                <button class="btn btn_md">Отправить</button>
+            </form>
+        </div>
+
+    </div>
+</div>
 
 <!-- check connect -->
 <div class="section section_shadow ">
     <div class="container">
-        <h2 class="title">Убедитесь подключен ли ваш дом</h2>
+        <h2 class="title">Узнайте, подключен ли ваш дом</h2>
         <div class="check-address">
-            
+            <div class="check-address__text">
+                <p>Проверьте подлючение интрнета по адресу. Мы перезвоним, ответим на вопросы и подключим услугу, это
+                    займет не более 5 мин.</p>
+            </div>
+            <div class="check-address__form">
+                <form class=" form" action="">
+                    <div class="form__row">
+                        <div class="form__input-wrap form__input-wrap_has-list">
+                            <span class="form__label">Выберите город</span>
+                            <input class="form__input" type="text" value="Новосибирск">
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__input-wrap">
+                            <span class="form__label">Улица</span>
+                            <input class="form__input" type="text" placeholder="Введите название улицы">
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__input-wrap">
+                            <span class="form__label">Номер дома</span>
+                            <input class="form__input" type="text" placeholder="Введите номер дома">
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__input-wrap">
+                            <span class="form__label">Контактный телефон</span>
+                            <input class="form__input" type="tel" placeholder="+7 (905) 081-94-06">
+                        </div>
+                    </div>
+                    <button class="btn btn_center btn_lg">Проверить</button>
+                </form>
+            </div>
+
         </div>
-        
+
     </div>
 </div>
 <!-- check connect-->
-
 {% endblock %}

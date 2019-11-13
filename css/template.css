@@ -63,7 +63,6 @@ a {
 input,
 label,
 button {
-  border: 0;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -89,8 +88,8 @@ body {
 .section {
   padding: 100px 0; }
   .section_shadow {
-    -webkit-box-shadow: inset 0px 0px 67px 0px rgba(17, 41, 80, 0.07);
-            box-shadow: inset 0px 0px 67px 0px rgba(17, 41, 80, 0.07); }
+    -webkit-box-shadow: inset 0px 0px 15px 0px rgba(17, 41, 80, 0.07);
+            box-shadow: inset 0px 0px 15px 0px rgba(17, 41, 80, 0.07); }
   .section_sm-padding {
     padding: 50px 0; }
 
@@ -123,9 +122,19 @@ body {
   text-align: center;
   background: #bdd70c;
   font-weight: bold;
-  color: #ffffff; }
+  color: #ffffff;
+  border: 0;
+  cursor: pointer; }
+  .btn:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(17, 41, 80, 0.7);
+            box-shadow: 0px 0px 10px 0px rgba(17, 41, 80, 0.7);
+    color: #000000; }
   .btn_center {
     margin: auto; }
+  .btn_md {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px; }
   .btn_lg {
     max-width: 250px;
     height: 50px;
@@ -211,6 +220,8 @@ body {
     transition: 0.3s; }
     .nav-bar__link:hover {
       color: #bdd70c; }
+  .nav-bar__feedback {
+    display: none; }
 
 .intro {
   padding: 100px 0;
@@ -357,6 +368,60 @@ body {
   color: #bdd70c;
   text-align: center; }
 
+.check-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .check-address__text {
+    width: 60%; }
+  .check-address__form {
+    width: 40%; }
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+.form__input-wrap {
+  display: block;
+  width: 100%; }
+
+.form__input {
+  display: block;
+  height: 45px;
+  width: 100%;
+  margin: 0 0 15px 0;
+  padding: 0 15px;
+  line-height: 45px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #ededed;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(17, 41, 80, 0.07);
+          box-shadow: 0px 0px 15px 0px rgba(17, 41, 80, 0.07);
+  -webkit-transition: all .4s;
+  transition: all .4s; }
+  .form__input::-webkit-input-placeholder {
+    color: #d4d4d4; }
+  .form__input::-moz-placeholder {
+    color: #d4d4d4; }
+  .form__input:-ms-input-placeholder {
+    color: #d4d4d4; }
+  .form__input::-ms-input-placeholder {
+    color: #d4d4d4; }
+  .form__input::placeholder {
+    color: #d4d4d4; }
+  .form__input:focus {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(17, 41, 80, 0.3);
+            box-shadow: 0px 0px 10px 0px rgba(17, 41, 80, 0.3); }
+
+.form__label {
+  display: block;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 10px;
+  font-size: .85em;
+  font-weight: bold; }
+
 @media (max-width: 768px) {
   .container {
     padding: 0 15px; }
@@ -382,50 +447,66 @@ body {
     font-size: .9em;
     font-weight: normal;
     margin: 0; }
-  .header__inner {
-    padding: 15px 0 0 0; }
-  .header__top-line {
-    padding: 0 0 10px 0; }
-  .header__city {
-    display: none; }
-  .header__phone {
-    margin-right: 0; }
-  .header__svg {
-    width: 20px;
-    height: 20px; }
-  .header__call-back {
-    display: none; }
-  .header__toggle-label {
-    position: absolute;
-    left: -44px;
-    font-weight: 500;
-    top: 3px;
-    color: #112950; }
-  .header__toggle-btn {
-    position: relative;
-    display: block;
-    width: 44px;
-    height: 25px;
-    border-radius: 3px; }
-    .header__toggle-btn span {
+  .header {
+    position: relative; }
+    .header__inner {
+      padding: 15px 0 0 0; }
+    .header__top-line {
+      padding: 0 0 10px 0; }
+    .header__city {
+      display: none; }
+    .header__phone {
+      margin-right: 0; }
+    .header__svg {
+      width: 20px;
+      height: 20px; }
+    .header__call-back {
+      display: none; }
+    .header__toggle-label {
       position: absolute;
-      left: 7px;
+      left: -44px;
+      font-weight: 500;
+      top: 3px;
+      color: #112950; }
+    .header__toggle-btn {
+      position: relative;
       display: block;
-      width: 30px;
-      height: 2px;
-      background: #112950; }
-      .header__toggle-btn span:nth-child(1) {
-        top: 5px; }
-      .header__toggle-btn span:nth-child(2) {
-        top: 11px; }
-      .header__toggle-btn span:nth-child(3) {
-        top: 17px; }
+      width: 44px;
+      height: 25px;
+      border-radius: 3px; }
+      .header__toggle-btn span {
+        position: absolute;
+        left: 7px;
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: #112950; }
+        .header__toggle-btn span:nth-child(1) {
+          top: 5px; }
+        .header__toggle-btn span:nth-child(2) {
+          top: 11px; }
+        .header__toggle-btn span:nth-child(3) {
+          top: 17px; }
   .nav-bar {
+    position: absolute;
+    left: 0;
+    top: auto;
+    width: 100%;
     margin-top: 0;
-    padding: 10px 0;
-    display: none; }
+    padding: 0 0 0 0;
+    background: #ffffff; }
+    .nav-bar__list {
+      padding: 10px 0; }
     .nav-bar__item {
-      margin: 0 0 0 0; }
+      display: block;
+      margin: 0 0 0 0;
+      padding: 10px 20px; }
+    .nav-bar__link {
+      font-size: 1.2em; }
+    .nav-bar__feedback {
+      display: block;
+      padding: 20px;
+      background: #112950; }
   .intro {
     padding: 40px 0;
     background: #112950;
@@ -486,31 +567,24 @@ body {
         margin-right: 0; }
   .link-more {
     margin: 20px 0; }
-  .form__row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-  .form__col {
-    width: 100%;
-    padding: 0 10px;
-    margin: 0 0 10px 0; }
-    .form__col_60 {
-      width: 100%; }
-    .form__col_50 {
-      width: 100%; }
-    .form__col_20 {
-      width: 50%; }
-  .form__input {
-    background: #ededed;
-    border-radius: 5px;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 10px; }
-  .form__label {
+  .order__text {
+    margin: 10px 0;
+    font-size: 1em;
+    text-align: center; }
+  .order__form {
+    text-align: center; }
+  .order__input-wrap {
+    margin: 0 0 20px 0; }
+  .order__label {
     display: block;
-    margin: 0 0 10px 0; }
+    margin: 10px 0; }
+  .order__input {
+    border: 1px solid #bdd70c;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 1.2em;
+    height: 40px; }
   .check-addres__form {
     border: 1px solid red;
     display: none; } }
