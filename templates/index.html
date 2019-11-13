@@ -1,0 +1,224 @@
+{% extends "./parts/main.html" %}
+
+{% block content %}
+
+<!-- promo box -->
+<div class="intro">
+    <div class="container">
+        <div class="intro__offer">
+            Подключим интернет в день заявки!
+        </div>
+        <div class="intro__descrioption"> От 400 р./мес. до 200 Мбит</div>
+        <a href="#" class="btn btn_center btn_lg">Подключить меня</a>
+
+    </div>
+</div>
+<!-- /promo box -->
+
+<!-- advantages -->
+<div class="section section_sm-padding section_shadow">
+    <div class="container">
+        <ul class="advantages-list">
+            <li class="advantages-list__item">
+                <svg class="advantages-list__svg">
+                    <use xlink:href="#internet"></use>
+                </svg>
+                <strong class="advantages-list__title">Надежно</strong>
+                <span class="advantages-list__text">
+                    Гарантия стабильного интернет соедеиня круглые сутки.
+                </span>
+            </li>
+            <li class="advantages-list__item">
+                <svg class="advantages-list__svg">
+                    <use xlink:href="#saving"></use>
+                </svg>
+                <strong class="advantages-list__title">Выгодно</strong>
+                <span class="advantages-list__text">
+                    Стоимость наших тарифов начинается от 400 рублей, все цены фиксированны.
+                </span>
+            </li>
+            <li class="advantages-list__item">
+                <svg class="advantages-list__svg">
+                    <use xlink:href="#recomendate"></use>
+                </svg>
+                <strong class="advantages-list__title">Проверенно</strong>
+                <span class="advantages-list__text">
+                    Каждый пятый пользователь приходит к нам по рекомендации друга.
+                </span>
+            </li>
+            <li class="advantages-list__item">
+                <svg class="advantages-list__svg">
+                    <use xlink:href="#support"></use>
+                </svg>
+                <strong class="advantages-list__title">Удобно</strong>
+                <span class="advantages-list__text">
+                    Наши специалисты всегда готовы помочь вам в любое время 24/7.
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /advantages -->
+
+
+<!-- tariffs-list -->
+<div class="container">
+    <div class="section">
+        <div class="title">Популярные тарифы</div>
+        <div class="tariffs-list">
+
+            <!-- tariff -->
+            <div class="tariffs-list__item">
+                <div class="tariffs-list__image" style="background-image: url('/images/man-one.jpg');">cc</div>
+                <div class="tariffs-list__info">
+                    <span class="tariffs-list__title">только интернет</span>
+                    <div class="tariffs-list__content">
+                        <div class="tariffs-list__content-item">
+                            <svg class="progress-svg " viewbox="0 0 95 95">
+                                <circle class="progress-svg__circle progress-svg__circle_overlay " cx="50" cy="50"
+                                    r="40" />
+                                <circle data-progress="50"
+                                    class=" js__progress-svg__animate progress-svg__circle progress-svg__circle_progress"
+                                    cx="50" cy="50" r="40" />
+                            </svg>
+                            <span class="tariffs-list__value">100</span>
+                            <span class="tariffs-list__value-label">Мбит/сек</span>
+                        </div>
+                    </div>
+                    <ul class="tariffs-list__description">
+                        <li>Wi-Fi роутер для дома 10 р.</li>
+                        <li>Подключение 0 р.</li>
+                    </ul>
+                    <div class="tariffs-list__price">
+                        400 <span class="tariffs-list__price-unit">руб./мес.</span>
+                    </div>
+                    <a href="#" class="btn btn_lg btn_center">Подключить</a>
+                </div>
+            </div>
+            <!-- /tariff -->
+
+            <!-- tariff -->
+            <div class="tariffs-list__item">
+                <div class="tariffs-list__image" style="background-image: url('/images/man-one.jpg');">cc</div>
+                <div class="tariffs-list__info">
+                    <span class="tariffs-list__title">интернет + тв</span>
+                    <div class="tariffs-list__content">
+                        <div class="tariffs-list__content-item">
+                            <svg class="progress-svg " viewbox="0 0 95 95">
+                                <circle class="progress-svg__circle progress-svg__circle_overlay " cx="50" cy="50"
+                                    r="40" />
+                                <circle data-progress="50"
+                                    class=" js__progress-svg__animate progress-svg__circle progress-svg__circle_progress"
+                                    cx="50" cy="50" r="40" />
+                            </svg>
+                            <span class="tariffs-list__value">100</span>
+                            <span class="tariffs-list__value-label">Мбит/сек</span>
+                        </div>
+                        <div class="tariffs-list__content-item">
+                            <svg class="progress-svg " viewbox="0 0 95 95">
+                                <circle class="progress-svg__circle progress-svg__circle_overlay " cx="50" cy="50"
+                                    r="40" />
+                                <circle data-progress="80"
+                                    class=" js__progress-svg__animate progress-svg__circle progress-svg__circle_progress"
+                                    cx="50" cy="50" r="40" />
+                            </svg>
+                            <span class="tariffs-list__value">160</span>
+                            <span class="tariffs-list__value-label">ТВ каналов</span>
+                            <a class="tariffs-list__list-chanel">список каналов</a>
+                        </div>
+
+                    </div>
+                    <ul class="tariffs-list__description">
+                        <li>Wi-Fi роутер для дома 10 р.</li>
+                        <li>ТВ приставка 10 р.</li>
+                    </ul>
+                    <div class="tariffs-list__price">
+                        600 <span class="tariffs-list__price-unit">руб./мес.</span>
+                    </div>
+                    <a href="#" class="btn btn_lg btn_center">Подключить</a>
+                </div>
+            </div>
+            <!-- /tariff -->
+
+            <!-- tariff -->
+            <div class="tariffs-list__item">
+                <div class="tariffs-list__image" style="background-image: url('/images/man-one.jpg');">cc</div>
+                <div class="tariffs-list__info">
+                    <span class="tariffs-list__title">супер интернет</span>
+                    <div class="tariffs-list__content">
+                        <div class="tariffs-list__content-item">
+                            <svg class="progress-svg " viewbox="0 0 95 95">
+                                <circle class="progress-svg__circle progress-svg__circle_overlay " cx="50" cy="50"
+                                    r="40" />
+                                <circle data-progress="100"
+                                    class=" js__progress-svg__animate progress-svg__circle progress-svg__circle_progress"
+                                    cx="50" cy="50" r="40" />
+                            </svg>
+                            <span class="tariffs-list__value">200</span>
+                            <span class="tariffs-list__value-label">Мбит/сек</span>
+                        </div>
+                    </div>
+                    <ul class="tariffs-list__description">
+                        <li>Wi-Fi роутер для дома 10 р.</li>
+                        <li>ТВ приставка 10 р.</li>
+                    </ul>
+                    <div class="tariffs-list__price">
+                        800 <span class="tariffs-list__price-unit">руб./мес.</span>
+                    </div>
+                    <a href="#" class="btn btn_lg btn_center">Подключить</a>
+                </div>
+
+
+            </div>
+            <!-- /tariff -->
+            <a href="#" class="link-more">Показать все тарифы</a>
+        </div>
+    </div>
+    <!-- /tariffs-list -->
+
+</div>
+<!-- tariffs-list -->
+
+
+<!-- check connect -->
+<div class="section section_shadow ">
+    <div class="container">
+
+        <h2 class="title">Убедитесь подключен ли ваш дом</h2>
+        <div class="check-addres">
+            <div class="check-addres__text">
+                <p>
+                    Вы можете проверить подключние к интернету по адресу. Оператор прокансультирует вас и поможет подобрать подходящий тариф.
+                   
+                </p>
+            </div>
+            <div class="check-addres__form-wrap">
+                <div class="check-addres__form">
+                    <form action="" class="form">
+                        <div class="form__row">
+                            <div class="form__col form__col_50">
+                                <label class="form__label" for="">Ваше имя (не обязательно)</label>
+                                <input class="form__input" type="text">
+                            </div>
+                            <div class="form__col form__col_50">
+                                <label class="form__label" for="">Контактный телефон</label>
+                                <input class="form__input" type="text">
+                            </div>
+                            <div class="form__col form__col_60">
+                                <label class="form__label" for="">Улица</label>
+                                <input class="form__input" type="text">
+                            </div>
+                            <div class="form__col  form__col_50">
+                                <label class="form__label" for="">Дом</label>
+                                <input class="form__input" type="text">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- check connect-->
+
+{% endblock %}

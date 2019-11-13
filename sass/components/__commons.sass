@@ -1,0 +1,548 @@
+$main-color: #bdd70c
+$darck-color: #112950
+$grey: #ededed
+$delay: 0.3s
+
+body
+    font-family: "Montserrat", sans-serif
+    font-weight: normal
+    border: 0
+    margin: 0
+    padding: 0
+    font-size: 16px
+    color: #2c2c2c
+
+
+.h1
+    font-size: 2em
+    font-weight: bolder
+    margin-bottom: 20px
+
+.section
+    padding: 100px 0
+
+    &_shadow
+        box-shadow: inset 0px 0px 67px 0px rgba(17, 41, 80, 0.07)
+    &_sm-padding
+        padding: 50px 0
+
+.title
+    display: block
+    font-size: 1.8em
+    font-weight: bold
+    text-align: center
+    margin: 0 0 50px 0
+
+.sub-title
+    display: block
+    font-weight: 500
+    font-size: 1.3em
+    text-align: center
+    margin: (-20px) 0 50px 0
+
+    &_grey
+        color: #787977
+.small-text
+    font-size: .6em
+    text-transform: none
+.btn
+    display: block
+    border-radius: 6px
+    transition: all $delay
+    white-space: nowrap
+    text-align: center
+    background: $main-color
+    font-weight: bold
+    color: #ffffff
+    &_center
+        margin: auto
+    &_lg
+        max-width: 250px
+        height: 50px
+        line-height: 50px
+        font-size: 1.2em
+
+
+.arrow-list
+    position: absolute
+
+    &__el_left
+        display: block
+        width: 15px
+        height: 2px
+        background: $main-color
+
+    &__el_right
+
+    &__el_left
+
+.container
+    display: block
+    padding: 0 30px
+    margin: 0 auto
+    width: 100%
+    max-width: 1360px
+
+.inline-svg-icon
+
+// header begin
+.header
+    &__toggle-btn
+        display: none
+    &__inner
+        padding: 20px 0 0 0
+
+    &__top-line
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 20px
+        border-bottom: 1px solid #efefef
+
+    &__city
+        font-weight: bold
+
+        &:hover
+            color: $main-color
+            cursor: pointer
+            transition: $delay
+
+    &__feedback
+        display: flex
+        align-items: center
+
+    &__phone
+        position: relative
+        font-weight: bold
+        font-size: 1.3em
+        margin-right: 30px
+        white-space: nowrap
+        &-name
+            position: absolute
+            font-size: .8em
+
+
+    &__svg
+        width: 23px
+        height: 26px
+        display: inline
+        vertical-align: middle
+        fill: $main-color
+
+.nav-bar
+    margin-top: 20px
+    padding: 20px 0
+
+    &__list
+
+    &__item
+        display: inline-block
+        margin-right: 30px
+
+    &__link
+        position: relative
+        transition: $delay
+
+        &:hover
+            color: $main-color
+
+        &_current
+
+// header end
+
+// intro begin
+.intro
+    padding: 100px 0
+    text-align: center
+    &__offer
+        font-size: 3em
+        font-weight: 500
+    &__descrioption
+        margin: 40px 0
+        font-size: 1.5em
+        font-weight: bold
+
+
+
+
+
+// intro end
+
+.advantages-list
+    display: flex
+    justify-content: center
+
+    &__item
+        width: 25%
+        text-align: center
+        padding: 20px
+
+    &__text
+        font-size: 0.8em
+        line-height: 0.2
+        font-weight: 500
+
+    &__title
+        display: block
+        margin-bottom: 0.5rem
+
+    &__svg
+        fill: $main-color
+        height: 60px
+        width: 60px
+
+.check-addres
+    display: flex
+    flex-wrap: wrap
+
+    &__text
+
+    &__form-wrap
+
+.tariffs-list
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+
+    &__item
+        width: 30%
+        margin-right: 5%
+        overflow: hidden
+        border-radius: 5px
+        box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.2)
+        &:nth-child(3n+3)
+            margin-right: 0
+    &__image
+        display: block
+        height: 170px
+        width: 103%
+        margin-top: -2px
+        background-size: cover
+
+    &__info
+        padding: 25px
+
+    &__title
+        width: 100%
+        font-weight: bold
+        font-size: 1.3em
+        margin-bottom: 10px
+    &__content
+        display: flex
+        flex-wrap: wrap
+        padding: 20px 0
+        width: 100%
+
+    &__content-item
+        position: relative
+        width: auto
+        margin-right: 20px
+
+    &__value
+        position: absolute
+        top: 38px
+        left: 0
+        width: 100%
+        display: block
+        text-align: center
+        font-size: 1.8em
+        font-weight: bold
+    &__value-label
+        display: block
+        text-align: center
+        font-weight: bold
+    &__description
+        margin-top: 20px
+        width: 100%
+        & li
+            display: block
+    &__price
+        display: block
+        width: 100%
+        text-align: center
+        font-weight: bold
+        font-size: 2em
+        margin: 20px 0
+    &__price-unit
+        font-size: .5em
+    &__list-chanel
+        color: blue
+        text-decoration: underline
+        font-size: .8em
+
+
+
+
+
+.progress-svg
+    width: 100px
+    height: 100px
+    &__circle
+        stroke-width: 5
+        fill: none
+        transform: rotate(90deg)
+        transform-origin: center
+        transition: all 1.5s
+        &_overlay
+            fill: none
+            stroke: #f9f9f9
+        &_progress
+            stroke: $main-color
+            stroke-linecap: round 
+            stroke-dasharray: 0 300
+
+
+
+
+.link-more
+    display: block
+    width: 100%
+    margin: 80px 0
+    font-size: 1em
+    font-weight: bold
+    color: $main-color
+    text-align: center
+
+.form
+    &__row
+        display: flex
+        flex-wrap: wrap
+
+    &__col
+        width: 100%
+        padding: 0 10px
+        margin: 0 0 10px 0
+
+        &_60
+            width: 60%
+
+        &_50
+            width: 50%
+
+        &_20
+            width: 20%
+
+    &__input
+        background: $grey
+        border-radius: 5px
+        height: 40px
+        line-height: 40px
+        padding: 0 10px
+
+    &__label
+        display: block
+        margin: 0 0 10px 0
+
+@media (max-width: 768px)
+    .container
+        padding: 0 15px
+
+    .btn
+
+
+    .header
+        &__inner
+
+        &__top-line
+
+        &__city
+            font-size: 1em
+
+            &:hover
+
+        &__feedback
+
+        &__phone
+            font-size: 1em
+
+        &__svg
+            width: 20px
+            height: 20px
+
+@media (max-width: 520px)
+    body
+        font-size: 14px
+
+    .container
+        padding: 0 15px
+
+    .section
+        padding: 30px 0
+
+    .title
+        font-size: 1.5em
+        margin: 0 0 30px 0
+    .sub-title_grey
+        font-size: .9em
+        font-weight: normal
+        margin: 0
+
+
+    .header
+        &__inner
+            padding: 15px 0 0 0
+
+        &__top-line
+            padding: 0 0 10px 0
+
+        &__city
+            display: none
+
+            &:hover
+
+        &__feedback
+
+        &__phone
+            margin-right: 0
+
+        &__svg
+            width: 20px
+            height: 20px
+
+        &__call-back
+            display: none
+        &__toggle-label
+            position: absolute
+            left: -44px
+            font-weight: 500
+            top: 3px
+            color: #112950
+        &__toggle-btn
+            position: relative
+            display: block
+            width: 44px
+            height: 25px
+            border-radius: 3px
+            
+            & span
+                position: absolute
+                left: 7px
+                display: block
+                width: 30px
+                height: 2px
+                background: $darck-color
+                &:nth-child(1)
+                    top: 5px
+                &:nth-child(2)
+                    top: 11px
+                &:nth-child(3)
+                    top: 17px 
+
+    .nav-bar
+        margin-top: 0
+        padding: 10px 0
+        display: none
+
+        &__list
+
+        &__item
+            margin: 0 0 0 0 
+
+        &__link
+            &::before
+
+            &:hover
+
+            &:hover::before
+
+            &_current
+    
+    .intro
+        padding: 40px 0 
+        background: $darck-color
+        color: #ffffff
+        &__offer
+            font-size: 2em
+            font-weight: bold
+        &__btn
+            color: #ffffff
+        &__descrioption
+            margin: 15px 0
+            font-size: 1.2em
+            font-weight: bold
+            color: #c5df16
+
+    .advantages-list
+        flex-wrap: wrap
+
+        &__item
+            position: relative
+            width: 100%
+            text-align: left
+            padding: 0
+            padding-left: 55px
+            margin: 0 0 20px 0
+            min-height: 60px
+        &__text
+            font-weight: normal
+
+        &__title
+            display: block
+            margin-bottom: 0.2em
+
+        &__svg
+            position: absolute
+            left: 0
+            top: 0
+            height: 40px
+            width: 40px
+
+    .tariffs-list
+        flex-wrap: wrap
+        &__item
+            width: 100%
+            margin: 0 0 20px 0
+            margin-right: 0
+            box-shadow: none
+            border: 1px solid #dcdada
+        &__image
+            height: 130px
+        &__info
+            text-align: center
+            padding: 20px 15px
+        &__content
+            justify-content: center
+            padding: 15px 0 0 0
+            &-item
+                &:last-child
+                    margin-right: 0
+    .link-more
+        margin: 20px 0
+
+    .form
+        &__row
+            display: flex
+            flex-wrap: wrap
+        &__col
+            width: 100%
+            padding: 0 10px
+            margin: 0 0 10px 0
+            &_60
+                width: 100%
+
+            &_50
+                width: 100%
+
+            &_20
+                width: 50%
+
+        &__input
+            background: $grey
+            border-radius: 5px
+            height: 40px
+            line-height: 40px
+            padding: 0 10px
+
+        &__label
+            display: block
+            margin: 0 0 10px 0
+
+    .check-addres
+        &__form
+            border: 1px solid red
+            display: none
+@media (max-width: 350px)
+
+    .container 
+        padding: 0 10px
+
