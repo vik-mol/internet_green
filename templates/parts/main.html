@@ -8,13 +8,23 @@
 <script src="scripts/main.js"></script>
 
 <body>
+    <!-- header -->
     {% include "./header.html" %}
+    <!-- /header -->
+
+    <!-- content -->
     <div class="content">
         {% block content %}{% endblock %}
-
     </div>
+    <!-- /content -->
 
+    <!-- footer -->
     {% include "./footer.html" %}
+    <!-- /footer -->
+
+    <!-- modal forms -->
+    {% include "./forms.html" %}
+    <!-- /modal forms -->
 
 </body>
 

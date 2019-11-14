@@ -344,7 +344,35 @@ body
         font-size: .85em
         font-weight: bold
     
-
+.order
+    text-align: center
+    &__text
+        margin: 10px 0
+        font-size: 1.3em
+        text-align: center
+        font-weight: 500
+    &__form
+        display: block
+        text-align: center
+        border-radius: 5px
+        width: 300px
+        margin: 10px auto
+    &__input-wrap
+        margin: 0 0 15px 0
+    &__label
+        display: block
+        margin: 20px 0 20px 0
+        font-weight: 500
+    &__input
+        border: 1px solid $main-color
+        border-radius: 10px
+        width: 100%
+        padding: 0 20px
+        font-size: 1.2em
+        height: 40px
+    &__phone
+        font-size: 1.5em
+        font-weight: 500
         
 @media (max-width: 768px)
     .container
@@ -435,7 +463,6 @@ body
             display: block
             width: 40px
             height: 40px
-            background: $main-color
             border-radius: 50%
             & span
                 position: absolute
@@ -443,7 +470,7 @@ body
                 display: block
                 width: 25px
                 height: 4px
-                background: $darck-color
+                background: $main-color
                 border-radius: 3px
                 transition: all .2s
                 &:nth-child(1)
@@ -575,21 +602,16 @@ body
 
     .order
         &__text
-            margin: 10px 0
-            font-size: 1em
-            text-align: center
-            font-weight: 500
+            font-size: 1.1em
         &__form
             text-align: center
-            border: 1px solid $main-color 
-            padding: 10px 10px
             border-radius: 5px
         &__input-wrap
             margin: 0 0 5px 0
         &__label
             display: block
-            margin: 0 0  10px 0
-            font-weight: 500
+            margin: 0 0 10px 0
+            font-weight: normal
             &_mr
                 margin: 10px 0 10px 0
         &__input
